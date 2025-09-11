@@ -1,0 +1,341 @@
+/* =========== Variables =========== */
+:root {
+	/* Primary */
+	--green-500: hsl(171, 66%, 44%);
+	--blue-100: hsl(233, 100%, 69%);
+	/* Neutral */
+	--gray-700: hsl(210, 10%, 33%);
+	--gray-500: hsl(201, 11%, 66%);
+	--white: hsl(0, 0%, 100%);
+}
+
+/* =========== Global Styles =========== */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 56.25%;
+}
+
+body {
+	font-family: "Bai Jamjuree", sans-serif;
+	font-weight: 400;
+	/* Default Font Değeri */
+	font-style: normal;
+}
+
+h1,
+h2,
+h3 {
+	color: var(--gray-700);
+	font-weight: 600;
+}
+
+h1 {
+	font-size: 3.8rem;
+}
+
+h2 {
+	font-size: 3.2rem;
+}
+
+h3 {
+	font-size: 2.6rem;
+}
+
+p {
+	font-size: 1.8rem;
+	line-height: 1.5;
+	color: var(--gray-500);
+}
+
+a {
+	display: inline-block;
+	text-decoration: none;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+ul {
+	list-style: none;
+}
+
+.container {
+	/* I. Yönetem - yatayda ortalama */
+	max-width: 90%;
+	margin-inline: auto;
+
+	/* II. Yönetem - yatayda ortalama */
+	/* padding-inline: 5%; */
+
+	margin-block-end: 20rem;
+}
+
+.section .container {
+	margin-block-end: 15rem;
+}
+
+.heading-pbe {
+	padding-block-end: 1.5rem;
+}
+
+.text-pbe {
+	padding-block-end: 6rem;
+}
+
+.pbe-2 {
+	padding-block-end: 2rem;
+}
+
+.text-align-center {
+	text-align: center;
+}
+
+.flex-direction {
+	display: flex;
+	flex-direction: column;
+	gap: 6rem;
+}
+
+/* Buttons */
+.btn {
+	font-size: 2rem;
+	background-color: var(--blue-100);
+	color: var(--white);
+	border-radius: 5rem;
+	padding: 1.5rem 6rem;
+	box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+		rgba(0, 0, 0, 0.23) 0px 6px 6px;
+	transition: all .5s ease;
+}
+
+.btn-ios {
+	background-color: var(--green-500);
+}
+
+.btn:hover {
+	opacity: .7;
+}
+
+.buttons {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2rem;
+}
+
+/* =========== Header =========== */
+.header {
+	background-image: url("../../images/background/bg-header-mobile.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-origin: padding-box;
+	background-position: center;
+}
+
+.header .logo {
+	width: 12rem;
+	padding-block: 15rem 5rem;
+}
+
+/* =========== Section Supercharge =========== */
+
+.section .section-icon {
+	width: 5rem;
+}
+
+/* =========== Brand =========== */
+
+.brand .flex-direction {
+	align-items: center;
+}
+
+.brand .brand-item {
+	width: 15rem;
+}
+
+/* =========== Footer =========== */
+
+.footer .container {
+	display: grid;
+	gap: 5rem;
+	margin-block-end: 5rem;
+	justify-items: center;
+	text-align: center;
+}
+
+.footer .footer-logo {
+	width: 8rem;
+}
+
+.footer .footer-links {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.footer .footer-links a {
+	font-size: 2rem;
+	color: var(--gray-500);
+	transition: color .3s ease-in-out;
+}
+
+.footer .footer-link a:hover {
+	color: var(--green-500);
+}
+
+.footer .social-links {
+	display: flex;
+	flex-direction: row;
+	gap: 4rem;
+}
+
+/* =========== Footer Bottom =========== */
+
+.footer-bottom {
+	background-color: var(--gray-700);
+}
+
+.footer-bottom .container {
+	margin-block: 0;
+	padding-block: 2rem;
+}
+
+.attribution {
+	text-align: center;
+	font-size: 1.6rem;
+}
+
+.attribution a {
+	color: var(--green-500)
+}
+
+/* =========== Responsive =========== */
+
+@media screen and (min-width: 576px) {
+	/* Header Backgroun change */
+	.header {
+		background-image: url("../../images/background/bg-header-desktop.png");
+	}
+}
+
+@media screen and (min-width: 768px) {
+	html {
+		font-size: 62.25%;
+	}
+	
+	/* Container */
+	.container {
+		width: 70%;
+	}
+
+	/* Buttons */
+	.buttons {
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.btn {
+		padding-inline: 3rem;
+	}
+
+}
+
+@media screen and (min-width: 992px) {
+	/* menu */
+	.footer .container,
+	.brand .container,
+	.section.workflow .container,
+	.menu .container {
+		margin-inline: unset;
+		max-width: unset;
+		width: 100%;
+	}
+
+	.menu .menu-head {
+		max-width: 70%;
+		margin-inline: auto;
+	}
+
+	.menu .menu-body {
+		flex-direction: row;
+	}
+
+	.menu .menu-img {
+		flex-basis: 50%;
+	}
+
+	.menu .menu-img img {
+		position: relative;
+		left: -3rem;
+	}
+
+	.menu .menu-body .menu-content {
+		flex-direction: column;
+		text-align: start;
+		gap: 4rem;
+		flex-basis: 30%;
+		margin-block: auto;
+	}
+
+	/* Section Supercharge */	
+	.section .section-content {
+		max-width: 85%;
+		margin-inline: auto;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	.section .section-content .card {
+		width: 25%;
+	}
+
+	/* Brand */
+	.brand .container {
+		max-width: 80%;
+		margin-inline: auto;
+	}
+
+	.brand .brand-lists {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.brand .brand-item {
+		width: 20rem;
+	}
+
+	/* Footer */
+	.footer .container {
+		padding-inline: 15rem;
+		grid-template-columns: repeat(3, auto);
+		grid-template-rows: auto;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.footer .footer-links {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: auto;
+		column-gap: 5rem;
+		text-align: start;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	/* Container */
+	.container {
+		width: 60%;
+	}
+
+	.menu .menu-head {
+		max-width: 60%;
+	}
+}
