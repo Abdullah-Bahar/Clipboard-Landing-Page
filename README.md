@@ -49,8 +49,8 @@ Bu proje, [Frontend Mentor](https://www.frontendmentor.io/challenges/clipboard-l
 
 ### Linkler
 
-- Solution URL: [Code](https://your-solution-url.com)
-- Canlı Önizleme: [Web Sitesini Görüntülemek İçin Tıklayınız](https://your-live-site-url.com)
+- Solution URL: [Code](https://github.com/Abdullah-Bahar/Clipboard-Landing-Page)
+- Canlı Önizleme: [Web Sitesini Görüntülemek İçin Tıklayınız](https://abdullah-bahar.github.io/Clipboard-Landing-Page/)
 
 ## Süreç
 
