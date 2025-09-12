@@ -210,6 +210,7 @@ img {
 }
 
 .footer .footer-link a {
+	color: var(--gray-500);
 	transition: color .3s ease;
 }
 
@@ -241,12 +242,14 @@ img {
 
 /* =========== Media Query =========== */
 
+/* =========== 375px =========== */
 @media screen and (min-width: 375px) {
 	.btn {
 		width: unset;
 	}
 }
 
+/* =========== 576px =========== */
 @media screen and (min-width: 576px) {
 	html {
 		font-size: 56.25%;
@@ -271,12 +274,14 @@ img {
 	}
 }
 
+/* =========== 768px =========== */
 @media screen and (min-width: 768px) {
 	html {
 		font-size: 62.25%;
 	}
 }
 
+/* =========== 992px =========== */
 @media screen and (min-width: 992px) {
 	.container-larg {
 		max-width: 1200px;
