@@ -18,6 +18,7 @@
 	--gray-700: hsl(210, 10%, 33%);
 	--gray-500: hsl(201, 11%, 66%);
 	--white: hsl(0, 0%, 100%);
+	--Footer-background: hsl(201, 11%, 97%);
 
 	/* Breakpoints */
 	--bp-sm: 57.6rem;
@@ -97,10 +98,7 @@ img {
 .me-10 {margin-block-end: 10rem;}
 .me-15 {margin-block-end: 15rem;}
 .me-20 {margin-block-end: 20rem;}
-
-.m-inline-auto {
-	margin-inline: auto;
-}
+.m-inline-auto {margin-inline: auto;}
 
 .text-center {
 	text-align: center;
@@ -111,7 +109,7 @@ img {
 	padding-inline: 3rem;
 }
 
-.container-larg {
+.container-large {
 	padding-inline: 3rem;
 }
 
@@ -166,12 +164,12 @@ img {
 
 /* =========== Menu =========== */
 
-.menu .menu-img img{
+.main .main-img img{
 	width: 70%;
 	padding-block-end: 5rem;
 }
 
-.menu .menu-content.d-flex {
+.main .main-content.d-flex {
 	align-items: center;
 }
 
@@ -227,7 +225,6 @@ img {
 .footer-bottom .container-sm {
 	margin-block: 0;
 	padding-block-start: 2rem;
-	padding-inline: 4rem;
 }
 
 .footer-bottom .attribution {
@@ -283,35 +280,39 @@ img {
 
 /* =========== 992px =========== */
 @media screen and (min-width: 992px) {
-	.container-larg {
-		max-width: 1200px;
+	.container-large {
+		max-width: 1200px;	
 	}
 
-	.section-access .container-larg {
+	.brand .container-large {
+		max-width: 1300px;
+	}
+
+	.section-access .container-large {
 		max-width: 992px;
 	}
 
 	/* Menu */
-	.container-menu .menu-content {
+	.container-main .main-content {
 		max-width: 1440px;
 	}
 
-	.menu .menu-content.d-flex {
+	.main .main-content.d-flex {
 		flex-direction: row;
 		gap: 6rem;
 	}
 
-	.menu .menu-content .menu-img {
+	.main .main-content .main-img {
 		flex-basis: 55%;
 	}
 
-	.menu .menu-content .menu-img img {
+	.main .main-content .main-img img {
 		width: 100%;
 		position: relative;
 		left: -4rem;
 	}
 
-	.menu .menu-content .menu-text.d-flex{
+	.main .main-content .main-text.d-flex{
 		flex-direction: column;
 		flex-basis: 40%;
 		text-align: start;
@@ -331,7 +332,8 @@ img {
 
 	/* Footer */
 	.footer {
-		max-width: 1200px;
+		max-width: 1300px;
+		background: var(--Footer-background);
 	}
 
 	.footer .d-grid {
@@ -345,5 +347,18 @@ img {
 		grid-template-rows: auto;
 		justify-content: space-between;
 		justify-items: start;
+	}
+}
+
+/* Cihaz ayarlarında animasyonu kapatan kimseler için animasyonları kapatma */
+@media screen and (prefers-reduced-motion: reduce) {
+	* {
+		/* Komple aniamsyon kapatma */
+		/* animation: none;
+		transition: none; */
+
+		/* Animasyonların yavaşlatılması öneriliyor */
+		animation-duration: 0.001ms !important;
+		transition-duration: 0.001ms !important;
 	}
 }
