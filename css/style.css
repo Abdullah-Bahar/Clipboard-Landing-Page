@@ -334,11 +334,11 @@ img {
 @media screen and (prefers-reduced-motion: reduce) {
 	* {
 		/* Komple aniamsyon kapatma */
-		/* animation: none;
-		transition: none; */
+		animation: none;
+		transition: none;
 
 		/* Animasyonların yavaşlatılması öneriliyor */
-		animation-duration: 0.001ms;
-		transition-duration: 0.001ms;
+		/* animation-duration: 0.001ms !important;
+		transition-duration: 0.001ms !important; */
 	}
 }
