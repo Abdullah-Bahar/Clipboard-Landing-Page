@@ -18,21 +18,10 @@
 	--gray-700: hsl(210, 10%, 33%);
 	--gray-500: hsl(201, 11%, 66%);
 	--white: hsl(0, 0%, 100%);
-	--Footer-background: hsl(201, 11%, 97%);
 
-	/* Breakpoints */
-	--bp-sm: 57.6rem;
-	--bp-md: 76.8rem;
-	--bp-lg: 99.2rem;
-	--bp-xl: 120rem;
-	--bp-xxl: 140rem;
-
-	/* Container widths */
-	--container-sm: 54rem;
-	--container-md: 72rem;
-	--container-lg: 96rem;
-	--container-xl: 114rem;
-	--container-xxl: 132rem;
+	/* Shadow */
+	--btn-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+		rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 /* =========== Global Styles =========== */
@@ -105,7 +94,7 @@ img {
 }
 
 .container-small {
-	max-width: var(--container-sm);
+	max-width: 54rem;
 	padding-inline: 3rem;
 }
 
@@ -133,8 +122,7 @@ img {
 	color: var(--white);
 	padding: 1.5rem 6rem;
 	border-radius: 5rem;
-	box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
-		rgba(0, 0, 0, 0.23) 0px 6px 6px;
+	box-shadow: var(--btn-shadow);
 	transition: all .3s ease-in-out;
 	width: 100%;
 }
@@ -186,12 +174,8 @@ img {
 /* =========== Brand =========== */
 
 .brand .d-flex {
-	gap: 4rem;
+	gap: 6rem;
 	align-items: center;
-}
-
-.brand .brand-item {
-	width: 20rem;
 }
 
 /* =========== Footer =========== */
@@ -240,14 +224,14 @@ img {
 /* =========== Media Query =========== */
 
 /* =========== 375px =========== */
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 23.438rem) {
 	.btn {
 		width: unset;
 	}
 }
 
 /* =========== 576px =========== */
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 36rem) {
 	html {
 		font-size: 56.25%;
 	}
@@ -257,7 +241,7 @@ img {
 	}
 
 	.container-small {
-		max-width: var(--container-md);
+		max-width: 72rem;
 	}
 
 	.btn {
@@ -272,29 +256,26 @@ img {
 }
 
 /* =========== 768px =========== */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48rem) {
 	html {
-		font-size: 62.25%;
+		font-size: 62.5%;
 	}
 }
 
 /* =========== 992px =========== */
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 62rem) {
+	/* Container */
 	.container-large {
-		max-width: 1200px;	
-	}
-
-	.brand .container-large {
-		max-width: 1300px;
+		max-width: 120rem;	
 	}
 
 	.section-access .container-large {
-		max-width: 992px;
+		max-width: 99.2rem;
 	}
 
 	/* Menu */
 	.container-main .main-content {
-		max-width: 1440px;
+		max-width: 144rem;
 	}
 
 	.main .main-content.d-flex {
@@ -332,8 +313,7 @@ img {
 
 	/* Footer */
 	.footer {
-		max-width: 1300px;
-		background: var(--Footer-background);
+		max-width: 144rem;
 	}
 
 	.footer .d-grid {
