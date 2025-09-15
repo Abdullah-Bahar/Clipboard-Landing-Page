@@ -68,15 +68,7 @@ Bu proje, [Frontend Mentor](https://www.frontendmentor.io/challenges/clipboard-l
 ### Olası İyileştirmeler
 
 - Görseller, `.webp` foramtına dönüştürülerek optimize edilebilir.
-- Erişilebilirlik adına `aria-label` ve `alt` etiketleri iyileştirilebilir.
-- Animasyon eklenebilir.
-- `<menu>` öğesi kullanılırken semantik yapıya dikkat edilmesi adına; içinde doğrudan `<div>` veya diğer block elementler yerleştirmek yerine liste elemanları (`<ul>` + `<li>`) yerleştirilmeli. İçerikler ise lsite elemanlarının altında organize edilmeli. Böylece tarayıcı uyumluluğu ve erişilebilirlik artırılabilir.
-	- Bu sayede `<menu>` içeriği **ekran okuyucular (screen reader)** tarafından doğru şekilde algılanır ve kullanıcılara anlamlı bir navigasyon sunar.
-	- `<menu>` yerin `<main>` veya `<section>` kullanılabilir.
-- Media query’lerde em veya rem birimleri kullanılarak kullanıcıların font-size tercihlerine saygı gösterilebilir.
-- CSS functions (calc, min, clamp) kullanılarak responsive ve flexible tasarımlar yapılabilir.
-- Kullanıcıların motion hassasiyetine göre animasyonlara alternatif sağlanabilir (prefers-reduced-motion kullanılarak), böylece hareketten rahatsız olan kişiler için erişilebilirlik artırılabilir.
-
+- CSS functions (`calc, min, clamp`) kullanılarak responsive ve flexible tasarımlar yapılabilir.
 
 ## Yazar
 
